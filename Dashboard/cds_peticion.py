@@ -1,0 +1,175 @@
+import cdsapi
+
+c = cdsapi.Client()
+
+"""c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'ecmwf',
+        'system':'5',
+        'variable':'maximum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_ecmwf_5_t2max_1906_6.grib')"""
+
+"""c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'ukmo',
+        'system':'14',
+        'variable':'maximum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_ukmo_14_t2max_1906_6.grib')"""
+
+"""c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'meteo_france',
+        'system':'6',
+        'variable':'maximum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_meteofrance_6_t2max_1906_6.grib')"""
+
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'dwd',
+        'system':'2',
+        'variable':'maximum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_dwd_2_t2max_1906_6.grib')
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'cmcc',
+        'system':'3',
+        'variable':'maximum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_cmcc_3_t2max_1906_6.grib')
+####################################################
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'ecmwf',
+        'system':'5',
+        'variable':'minimum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_ecmwf_5_t2min_1906_6.grib')
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'ukmo',
+        'system':'14',
+        'variable':'minimum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_ukmo_14_t2min_1906_6.grib')
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'meteo_france',
+        'system':'6',
+        'variable':'minimum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_meteofrance_6_t2min_1906_6.grib')
+
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'dwd',
+        'system':'2',
+        'variable':'minimum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_dwd_2_t2min_1906_6.grib')
+
+c.retrieve(
+    'seasonal-postprocessed-single-levels',
+    {
+        'originating_centre':'cmcc',
+        'system':'3',
+        'variable':'minimum_2m_temperature_in_the_last_24_hours_anomaly',
+        'product_type':'ensemble_mean',
+        'year':'2019',
+        'month':'06',
+        'leadtime_month':[
+            '1','2','3',
+            '4','5','6'
+        ],
+        'format':'grib'
+    },
+    'sea_an_cmcc_3_t2min_1906_6.grib')
